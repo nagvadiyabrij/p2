@@ -13,25 +13,30 @@ namespace p2
             N = Convert.ToInt32(Console.ReadLine());
             int[] arr = new int[N];
 
-            for (int i = 0; i < N; i++)
+            int positive = 0;
+            int negative = 0;
+            int zero = 0;
+
+            Console.Write("Enter no. of element: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
             {
-                Console.WriteLine("enter element : ");
-                arr[i] = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter number i: ");
+                int num = Convert.ToInt32(Console.ReadLine());
 
-                int odd = 0;
-                int even = 0;
-                int count = 0;
-
-                if (arr[i] % 2 == 0)
-                {
-                    Console.WriteLine("even");
-                }
+                if (num > 0)
+                    positive++;
+                else if (num < 0)
+                    negative++;
                 else
-                { 
-                    Console.WriteLine("odd");
-               }
-
+                    zero++;
             }
+
+            Console.WriteLine("Positive numbers: " + positive);
+            Console.WriteLine("Negative numbers: " + negative);
+            Console.WriteLine("Zero numbers: " + zero);
         }
     }
 }
+        
