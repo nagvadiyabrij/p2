@@ -10,9 +10,11 @@ namespace p2
         {
             static void Main()
             {
-                Console.WriteLine("Brij Nagvadiya\n24SOECE11024"); Console.Write("Enter the number of elements: "); int n = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Brij Nagvadiya\n24SOECE11024"); Console.Write("Enter the number of elements: ");
+                int n = Convert.ToInt32(Console.ReadLine());
 
-                int[] numbers = new int[n]; int[] even = new int[n];
+                int[] numbers = new int[n]; 
+                int[] even = new int[n];
                 int[] odd = new int[n];
 
                 int evenCount = 0;
